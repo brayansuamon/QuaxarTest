@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import "./login_user.css";
+import styles from "./login_user.module.scss";
+const {
+  card,
+  flex_container,
+  centered,
+  inputContainer,
+  form,
+  btn,
+  error,
+  inVisible,
+  inputError,
+} = styles;
 
 const Login_user = () => {
   const [username, setUsername] = useState("");
@@ -12,27 +23,27 @@ const Login_user = () => {
     console.log("hello");
 
     if (username === "username" || username === "") {
-      // error positivo
+      // positive error
       setUsernameError(true);
     } else {
-      // error negativo
+      // negative error
       setUsernameError(false);
     }
-    //Para la clave
+    //To password
     if (passwordf.length < 6) {
-      // error positivo
+      // positive error
       setPasswordError(true);
     } else {
-      // error negativo
+      // negative error
       setPasswordError(false);
     }
   };
 
   return (
-    <div className="flex-container centered">
-      <div className="card ">
-        <form className="form">
-          <div className="inputContainer">
+    <div className={`${flex_container} ${centered}`}>
+      <div className={card}>
+        <form className={form}>
+          <div className={inputContainer}>
             <input
               autoComplete="off"
               placeholder="username"
@@ -40,13 +51,13 @@ const Login_user = () => {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className={`${usernameError ? "inputError" : ""}`}
+              className={`${usernameError ? inputError : ""}`}
             />
-            <span className={`${usernameError ? "inVisible" : ""} error`}>
+            <span className={`${usernameError ? inVisible : ""} ${error}`}>
               Verifica los datos
             </span>
           </div>
-          <div className="inputContainer">
+          <div className={inputContainer}>
             <input
               placeholder="password"
               name="password"
@@ -56,10 +67,10 @@ const Login_user = () => {
                 // console.log(e.target.value);
                 setPasswordf(e.target.value);
               }}
-              className={`${passwordError ? "inputError" : ""}`}
+              className={`${passwordError ? inputError : ""}`}
             />
           </div>
-          <button className="btn" onClick={handleSubmit}>
+          <button className={btn} onClick={handleSubmit}>
             Login
           </button>
         </form>
