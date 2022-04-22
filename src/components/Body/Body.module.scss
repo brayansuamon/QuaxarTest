@@ -1,0 +1,15 @@
+.body{
+
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    margin: 10px;
+    .aside_name{
+        margin-top: 150px;
+        font-size: 35px;
+       transform: rotate(90deg);
+
+    }
+
+}

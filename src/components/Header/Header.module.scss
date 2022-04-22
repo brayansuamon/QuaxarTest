@@ -1,4 +1,6 @@
 .header{
+    height: 200px;
+    width: 100%;
     display:flex;
     justify-content: space-around;
 flex-wrap: wrap;
@@ -6,6 +8,7 @@ flex-wrap: wrap;
         ul{
         display: flex;
         justify-content: space-around;
+        
         li{
             list-style: none;
             margin: 7%;
