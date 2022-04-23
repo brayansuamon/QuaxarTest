@@ -1,0 +1,32 @@
+.skills_body{
+    width: 100%;
+    height: 100%;
+    background-color: #D7DBDD;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+    h1{
+       font-size: 50px;
+       margin-bottom: 40px;
+    }
+ ul{
+    .text_skills{
+    list-style: none;
+    }
+
+    li{
+       margin-bottom: 10px;
+      img{
+         width: 30px;
+         height: 30px;
+      }
+      span{
+         margin-left: 10px;
+         font-size: 24px;
+      }
+   }
+     
+ }
+;}
