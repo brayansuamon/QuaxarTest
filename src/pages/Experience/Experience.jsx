@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Experience.module.scss";
-const { body_exp } = styles;
+const { body_exp, body_links } = styles;
 const Experience = () => {
   return (
     <div className={body_exp}>
@@ -24,21 +24,33 @@ const Experience = () => {
           each other. Implemented Firebase, React.js, Vite.js, React Router,
           UseReducer, Customhooks, Styled-Components, Sass, Css (flexbox and
           grid), Html, and JavaScript, Git, and GitLens. URL:
-          <a href="https://users-d9f6d.firebaseapp.com/">Tweets</a>
+          <a className={body_links} href="https://users-d9f6d.firebaseapp.com/">
+            Tweets
+          </a>
           <br />
           <br />
           Development of GIFS search engine using react hooks and requests to
           the GIFOS API. URL:
-          <a href="https://t2es5.sse.codesandbox.io/">Gifos</a>
+          <a className={body_links} href="https://t2es5.sse.codesandbox.io/">
+            Gifos
+          </a>
           <br />
           <br />
           Hotels searching in React.js for tourist when they need get a room to
           rest. So, this webpage help to book a hotel in different places and
           prices where users can select their comfort. URL:
-          <a href="https://4uv0c.csb.app/">Hotels</a> <br />
+          <a className={body_links} href="https://4uv0c.csb.app/">
+            Hotels
+          </a>{" "}
+          <br />
           <br /> PodCast Channel layout to play content, navigation and
           compatibility with multiple browsers and devices (Media Queries). URL:
-          <a href="https://brayansuarezsprint1.netlify.app/">PodCast</a>
+          <a
+            className={body_links}
+            href="https://brayansuarezsprint1.netlify.app/"
+          >
+            PodCast
+          </a>
         </p>
       </article>
     </div>
