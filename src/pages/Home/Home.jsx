@@ -11,7 +11,7 @@ const Home = () => {
       <section className={name_home}>
         <h1>Brayan Aleandro Suarez Monroy</h1>
         <br />
-        <h2>Ingeniero y desarrollador web</h2>
+        <h2>Engineer and Frontend Developer</h2>
       </section>
     </div>
   );
