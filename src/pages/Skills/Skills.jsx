@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Skills.module.scss";
 
-const { skills_body, text_skills } = styles;
+const { body_skills, text_skills } = styles;
 
 const Skills = () => {
   return (
-    <div className={skills_body}>
+    <div className={body_skills}>
       <h1>Tools used</h1>
       <ul>
         <li className={text_skills}>
