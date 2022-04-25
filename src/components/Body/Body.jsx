@@ -7,7 +7,15 @@ import Home from "../../pages/Home/Home";
 import Skills from "../../pages/Skills/Skills";
 import styles from "./Body.module.scss";
 
-const { body, aside_name, aside_1, aside_2, section, link_skills } = styles;
+const {
+  body,
+  aside_name,
+  aside_1,
+  aside_2,
+  section,
+  link_skills,
+  link_skills2,
+} = styles;
 
 const Body = () => {
   return (
@@ -26,7 +34,12 @@ const Body = () => {
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </section>
-      <aside className={`${aside_name} ${aside_2}`}>Contact</aside>
+
+      <aside className={`${aside_name} ${aside_2}`}>
+        <Link className={link_skills2} to="/contact">
+          Contact
+        </Link>
+      </aside>
     </div>
   );
 };
