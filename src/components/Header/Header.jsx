@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
-const { header, nav, link } = styles;
+const { header, nav, link, nav_names } = styles;
 const Header = () => {
   return (
     <header className={header}>
       <h1>Brayan Suarez Monroy</h1>
       <nav className={nav}>
-        <ul>
+        <ul id={nav_names}>
           <li>
             <Link className={link} to="/">
               Home

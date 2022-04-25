@@ -1,36 +1,40 @@
 .body{
 
-    grid-template-columns: 45px 1fr 45px;
+  
     height: 100%;
     width: 100%;
     display: grid;
-   
+    grid-template-columns: 5% 90% 5%;
+    grid-auto-flow: row;
     .aside_name{
         
     margin:60px 0px; 
     font-size: 35px;
     writing-mode: vertical-rl;
     text-align: center;
-    }
+    
+}
+    
     .aside_1{
-        grid-column: 1/1;
+        grid-column: 1/2;
         background-color:  #CCD1D1 ;
         color: #151414 ;
+     
         .link_skills{
             list-style: none;
             text-decoration: none;
         }
     }
     .section{
-        grid-column: 2/2;
-        height: 550px;
-        
+        grid-column: 2/3;
+      min-height: 550px;
         
     }
     .aside_2{
-        grid-column: 3/3;
+        grid-column: 3/4;
         background-color: #151414 ;
         color: #F3F1F1 ;
+       
         .link_skills2{
             list-style: none;
             text-decoration: none;
@@ -38,5 +42,22 @@
     }
  
 
+}
+@media screen and (max-width:800px){
+    .body{
+     .aside_name{
+       
+        font-size: 17px;
+        height: 20%;
+     }   
+    }
+}
+@media screen and (max-width:400px){
+    .body{
+        grid-template-columns: 10% 80% 10%;
+      
+     }   
+    
 
+    
 }

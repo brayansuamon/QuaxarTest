@@ -1,10 +1,13 @@
 .header{
-    height: 90px;
+    height: 100%;
     width: 100%;
     display:flex;
     justify-content: space-around;
     align-items: center;
-flex-wrap: wrap;
+    flex-wrap: wrap;
+    h1{
+      font-size: 50px;
+    }
     .nav{
         ul{
         display: flex;
@@ -21,4 +24,23 @@ flex-wrap: wrap;
     }
 
 
+}
+@media screen and (max-width:1200px){
+  .header{
+    flex-direction: column;
+   
+}
+}
+@media screen and (max-width:450px){
+    .header{
+     h1{
+       font-size:25px ;
+     }
+      .nav{
+        ul{
+        flex-wrap:wrap;
+      }  
+    }
+
+  }
 }
